@@ -2,7 +2,8 @@
 /* ==== PAGE WIDTH ==== */
 body {
     padding-left: 20%;
-    padding-right: 20%
+    padding-right: 20%;
+    background-color: lightcyan;
  }
 
 h1 {text-align: center;
@@ -11,16 +12,19 @@ h1 {text-align: center;
     margin-top: 0;
     margin-bottom: 32px;
     font-size: 84px;
+    color: blue;
 }
 
 h2 {
     font-size: 36px;
     margin-bottom: 4px;
+    color: blue;
 }
 
 h3 {
     font-size: 24px;
     margin-bottom: 4px;  
+    color: blue;
 }
 
 p {
@@ -28,4 +32,5 @@ p {
     line-height: 1.6;
     margin-top: 0;
     font-size: 18px;
+    color: darkslateblue;
 }
