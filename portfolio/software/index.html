@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Analytics Software | IBAT Web Design Portfolio Project | Mary Smith</title>
+	<title>Analytics Software | IBAT Web Design Portfolio Project | Kerstie Flanagan</title>
 
 	<meta name="description" content="IBAT Analytics tells you all you need to know about your website traffic, without tracking or storing visitors' personal information.">
 	
@@ -13,6 +13,9 @@
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,900,900i&display=swap" rel="stylesheet">
+
+	<!-- Link to icons for Font Awesome 5 -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">  
 
 </head>
 
@@ -22,17 +25,15 @@
 	<!-- Begin hero block -->
 	<header class="container-flexbox">
 		<div class="item-col-2">
-			<img src="assets/img/hero-image.png" alt="hero image" class="scale-up-center">
-		</div>
-		<div class="item-col-2">
 			<h1>Putting the tricks into web analytics</h1>
 			<p>IBAT Analytics helps you boost your business impact.</p>
+			<a class="btn-cta" href="#free-trial">Try it free</a>
 		</div>
-		
+		<div class="item-col-2">
+			<img src="assets/img/hero-image.png" alt="hero image" class="scale-up-center">
+		</div>
 	</header>
 	<!-- End hero block -->
-
-
 
 	<!-- Parent flexbox container for one column layout (.item-col-1) on all screens -->
 	<section class="container-flexbox bg-green">
@@ -41,17 +42,14 @@
 		</div>
 	</section><!-- End parent flexbox container -->
 
-	
-
-	<!-- Parent flexbox container for one column layout (.item-col-1) on all screens -->
+	<!-- Parent flexbox container for one column layout (.item-col-1)
+	on all screens -->
 	<section class="container-flexbox bg-light-gray no-padding-bottom">
 		<div class="item-col-1">
 			<h2>What we offer</h2>
 			<p>Say 'Hello' to a simple yet powerful user analytics system. IBAT Analytics tells you all you need to know about your website traffic, without tracking or storing your visitors' personal information. </p>
 		</div>
 	</section><!-- End parent flexbox container -->
-
-	
 
 	<!-- Parent flexbox container for three-column layout (.item-col-3) on 
 	desktops and one-column layout on mobiles -->
@@ -76,8 +74,6 @@
 		</div>
 	</section><!-- End parent flexbox container -->
 
-	
-	
 	<!-- Parent flexbox container for one column layout (.item-col-1) on all screens -->
 	<section class="container-flexbox bg-light-gray no-padding-bottom">
 		<div class="item-col-1">
@@ -86,8 +82,6 @@
 		</div>
 	</section><!-- End parent flexbox container -->
 
-    
-		
 	<!-- Begin parent flexbox container for three-column layout (.item-col-3) 
 	on desktops and one-column layout on mobiles -->
 	<section class="container-flexbox bg-light-gray">
@@ -112,16 +106,12 @@
 
 	</section><!-- End parent flexbox container -->
 
-	
-
 	<!-- Parent flexbox container for one column layout (.item-col-1) on all screens -->
 	<section class="container-flexbox bg-green">
 		<div class="item-col-1">
 			<img src="assets/img/dashboard.png" alt="Analytics dashboard">
 		</div>
 	</section><!-- End parent flexbox container -->
-
-	
 
 	<!-- Begin parent flexbox container for one column layout (.item-col-1) on all screens -->
 	<section class="container-flexbox bg-light-gray no-padding-bottom">
@@ -130,8 +120,6 @@
 			<p>Join the 1,000s of delighted customers from every sector of business around the world who are using IBAT Analytics to drive their future success.</p>
 		</div>
 	</section><!-- End parent flexbox container -->
-
-	
 
 	<!-- Parent flexbox container for three-column layout (.item-col-3) on 
 	desktop and one-column layout on mobiles -->
@@ -157,5 +145,29 @@
 
 	</section><!-- End parent flexbox container -->
 
+	<!-- =============== BEGIN EMAIL SIGN UP FORM HTML ============= -->
+
+	<!-- Begin container for email signup form -->
+	<div class="container-form-email-signup" id="free-trial">
+
+		<h3>Start your free trial</h3>
+		<p>Enjoy unlimited access for 14 days. No credit card required.</p>
+
+		<!-- Form begins here -->
+		<form id="email-signup-form" name="email-signup-form" accept-charset="utf-8"  method="post" a action="https://formspree.io/f/mrgoapby">
+
+			<!-- Begin email sign up form fields -->
+			<div class="flex-row">
+				<label for="email-address">Email:</label>
+				<input type="text" id="email-address" name="email-address" placeholder="Your email address" maxlength="80" autocapitalize="none" required>
+				<input type="hidden" name="_subject" id="email-subject" value="Email Signup Form Submission">
+				<button id="btn-submit" type="submit" class="btn-submit">Try it free <i class="fas fa-arrow-right"></i></button>
+			</div>
+			<!-- End email sign up form fields -->
+		</form>
+    	<!-- Form ends here -->
+	</div>
+	<!-- End container for email signup form -->
+	<!-- =============== END EMAIL SIGN UP FORM HTML ============= -->	
 </body>
 </html>
