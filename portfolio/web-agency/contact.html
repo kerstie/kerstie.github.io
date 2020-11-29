@@ -5,17 +5,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Web Service Agency Team Page | IBAT Portfolio Project | Kerstie Flanagan</title>
+	<title>Web Service Agency Home Page | IBAT Portfolio Project | Kerstie Flanagan</title>
 
-	<meta name="description" content="Top talent with dozens of skills and years of experience to help you succeed in today's always-on digital world.">
+	<meta name="description" content="We are an award-winning web, mobile and digital design agency. We are based in Dublin, but serve clients all over the globe.">
 
 	<link rel="stylesheet" href="assets/css/style.css">
-
+	
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap" rel="stylesheet"> 
 
 	<!-- Link to icons for Font Awesome 5 -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">  
+	
+
 
 </head>
 
@@ -24,58 +26,58 @@
 	<!-- Begin hero block -->
 	<header class="container-flexbox hero-block">
 		<div class="item-col-2 slide-in-left">
-			<h1>Meet our team</h1>
-			<hr>
-			<h2>In one organisation: top talent with dozens of skills and years of experience to help you succeed in today's always-on digital world.</h2>
+			<h1>Your partner in digital success</h1>
+            <hr>
+            <h2>Working with clients to build digital campaigns rich in vision, meaning and creativity.</h2>  
 		</div>
 		<div class="item-col-2">
-			<img src="assets/img/hero-team-page.png" alt="team page hero image">
+			<img src="assets/img/hero-contact-page.png" alt="home page hero image"> 
 		</div>
 	</header>
 	<!-- End hero block -->
 
-
-	<!-- Begin parent flexbox container for one column layout (.item-col-1) on all screens -->
-	<section class="container-flexbox bg-pastel-pink">
-		<div class="item-col-1">
-			<h2>Need a super hero? </h2>
-			<p>Do you require some help for your project: prototyping, high-fidelity mockups, customer journey maps, UI/UX consultancy, development in HTML, CSS and JavaScript, marketing and SEO... ?</p>
-		</div>
-	</section>
-	<!-- End parent flexbox container -->
-
+<!-- Begin container for contact form -->
+        
+<div class="container-contact-form">
+	<h3>Let's talk</h3>
+	<p>Do you have a project you'd like to discuss with us. If so, please complete and submit this form.</p>  
 	
-	<!-- Begin parent flexbox container for three-column layout (.item-col-3) on desktops and one-column layout on mobiles -->
-	<section class="container-flexbox">
-		<div class="item-col-3">
-			<img src="assets/img/team-1.png" alt="Saul Goodman">
-			<h3>Saul Goodman</h3>
-			<p>Founder & CEO</p>
+	<!-- Contact form starts here -->
+	<form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://kerstieflanagan3@gmail.com">
+
+		<!-- Begin contact form fields -->
+
+		<div class="flex-row">
+			<div class="item-name">
+				<label for="full-name">Full Name</label>
+				<input type="text" name="name" id="full-name" placeholder="Your First and Last Name here." required>
+			</div>
+			<div class="item-email">
+				<label for="email-address">Email</label>
+				<input type="email" name="_replyto" id="email-address" placeholder="Your Email Address here." required>
+			</div>
 		</div>
 
-		<div class="item-col-3">
-			<img src="assets/img/team-2.png" alt="Betty deVois">
-			<h3>Betty deVois</h3>
-			<p>HTML Guru</p>
+		<div class="flex-row">
+			<div class="item-textarea">
+				<label for="message">Message</label>
+				<textarea rows="5" name="message" id="message" placeholder="Your Message here." required></textarea>
+			</div>
+
+			<div class="item-btn">
+				<button id="btn-submit" type="submit">Submit <i class="fas fa-arrow-circle-right"></i></button> 
+			</div>
 		</div>
 
-		<div class="item-col-3">
-			<img src="assets/img/team-3.png" alt="Larry Smith">
-			<h3>Larry Smith</h3>
-			<p>JavaScript Wizard</p>
-		</div>
-	</section><!--- /container -->
+		<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+		<!-- End contact form fields -->
 
+	</form>
+	<!-- Contact form ends here -->
 
-	<!-- Begin parent flexbox container for one column layout (.item-col-1) on all screens -->
-	<section class="container-flexbox bg-pastel-pink">
-		<div class="item-col-1">
-			<h2>We are here to help</h2>
-			<p>Interested in working together? Have a project you'd like to discuss? <a class="fancy-link" href="contact.html">Get in touch.</a></p>
-		</div>
-	</section>
-	<!-- End parent flexbox container -->
-
+</div>
+<!-- End container for contact form -->
+	
 <!-- Begin HTML footer -->
 
 <footer class="container-footer">
@@ -106,7 +108,6 @@
 </footer>
 
 <!-- End HTML footer -->
-
 
 </body>
 </html>
