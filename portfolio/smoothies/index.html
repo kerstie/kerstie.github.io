@@ -22,6 +22,7 @@
 
 <body>
 
+
 	<section class="container-block">
 		<h2>Our world-class smoothies are great at any time of the day and offer a tasty alternative to sugary and unhealthy snacks!</h2>
 	</section>
@@ -46,11 +47,13 @@
 			<img src="assets/img/apple.png" alt="Apple Delight smoothie">
 		</div>
 
+
 		<div class="item-col-2">
 			<h3>Apple Delight</h3>
 			<p>Apples are an awesome source of fibre and vitamin C. They also contain polyphenols, which can have numerous health benefits.  Apples have been linked to a lower risk of heart disease because they contain soluble fibre that can help lower blood cholesterol. Studies have also shown that eating apples reduces the risk of type 2 diabetes.</p>
         </div>	
 
+		
 
 	</section>
 
@@ -82,32 +85,59 @@
 		
 	</section>
 
+<!-- Begin container for email signup form -->
+<div class="container-form-email-signup">
 
+	<h3>Join our email list</h3>
+	<p>Keep me up-to-date with your latest healthy smoothie recipes and special offers.</p>
 
-		<!-- =============== BEGIN EMAIL SIGN UP FORM HTML ============= -->
+	<!-- Form begins here -->
+	<form id="email-signup-form" name="email-signup-form" accept-charset="utf-8"  method="post" action="https://formspree.io/f/mrgoapby">
 
-	<!-- Begin container for email signup form -->
-	<div class="container-form-email-signup">
+		<!-- Begin email sign up form fields -->
+		
+		<div class="flex-row">
+			<label for="email-address">Email:</label>
+			<input type="text" id="email-address" name="email-address" placeholder="Your email address" maxlength="80" autocapitalize="none" required>
+			<input type="hidden" name="_subject" id="email-subject" value="Email Signup Form Submission">
+			<button id="btn-submit" type="submit" class="btn-submit">Subscribe <i class="fas fa-envelope"></i></button>
+		</div>
+		<!-- End email sign up form fields -->
+	</form>
+	<!-- Form ends here -->
+</div>
+<!-- End container for email signup form -->
 
-		<h3>Join our email list</h3>
-		<p>Keep me up-to-date with your latest healthy smoothie recipes and special offers.</p> 
+<!-- Begin HTML footer -->
 
-		<!-- Form begins here -->
-		<form id="email-signup-form" name="email-signup-form" accept-charset="utf-8"  method="post" action="https://formspree.io/f/mrgoapby">
+<footer class="container-footer">
 
-			<!-- Begin email sign up form fields -->
-			<div class="flex-row">
-				<label for="email-address">Email:</label>
-				<input type="text" id="email-address" name="email-address" placeholder="Your email address" maxlength="80" autocapitalize="none" required>
-				<input type="hidden" name="_subject" id="email-subject" value="Email Signup Form Submission">
-				<button id="btn-submit" type="submit" class="btn-submit">Subscribe <i class="fas fa-envelope"></i></button>
-			</div>
-			<!-- End email sign up form fields -->
-		</form>
-    	<!-- Form ends here -->
+	<div class="item-3">
+
+		<h4>Site Map</h4>
+		<p><i class="fas fa-home fa-fw"></i><a href="https://kerstie.github.io/index.html">Home</a></p>
+		<p><i class="fas fa-file-alt fa-fw"></i><a href="https://kerstie.github.io/index">Portfolio</a></p>
+		<p><i class="fas fa-lock fa-fw"></i><a href="https://kerstie.github.io/privacy.html">Privacy</a></p>
+	
 	</div>
-	<!-- End container for email signup form -->
-	<!-- =============== END EMAIL SIGN UP FORM HTML ============= -->
+
+	<div class="item-3">
+		<h4>About Me</h4>
+		<p>Hi, I'm Kerstie. I'm a web designer and developer.</p>
+		
+		<p>I created this sample web page to showcase some of my digital creation skills.</p>
+	</div>
+
+	<div class="item-3">
+		<h4>Contact</h4>
+		<p><i class="fas fa-envelope fa-fw"></i><a href="mailto:kerstieflanagan3@gmail.com">Email</a></p>
+		<p><i class="fab fa-github-square fa-fw"></i><a href="https://kerstie.github.io/index" target="_blank">GitHub</a></p>
+		<p><i class="fab fa-linkedin fa-fw"></i><a href="https://www.linkedin.com/in/kerstieflanagan/" target="_blank">Linkedin</a></p>
+	</div>
+	
+</footer>
+
+<!-- End HTML footer -->
 
 </body>
 </html>

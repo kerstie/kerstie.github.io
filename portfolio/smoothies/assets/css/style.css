@@ -4,6 +4,9 @@ body, html { height: 100% }
 body { max-width: 1600px }
 img { width: 100%; height: auto; display: block }
 
+
+
+  
 /* =============== FONT =============== */
 
 body { 	font-family: 'Neucha', sans-serif }
@@ -12,12 +15,12 @@ body { 	font-family: 'Neucha', sans-serif }
 /* =========== SECTION BLOCK CONTAINERS =========== */
 
 /* Desktops */
-@media (min-width:768px) { 
-	.container-block { padding: 4% 12% 4% 12% }
+@media all and (min-width:768px) { 
+	.container-block { padding:4% 12% 4% 12% }
 }
 
 /* Mobiles */
-@media(max-width:767px) { 
+@media all and (max-width:767px) { 
 	.container-block { padding: 12% 8% 12% 8% }
 }
 
@@ -31,9 +34,9 @@ body { 	font-family: 'Neucha', sans-serif }
 
 h2 {
 	font-size: calc(26px + (54 - 26) * ((100vw - 320px) / (1600 - 320)));
-	color:#733fc0;
-	text-align: centre;
-	line-height: 1.6; 
+	color:#733fc0; 
+	text-align: center; 
+	line-height: 1.6;  
 }
 
 /* ==== FLEXBOX: PARENT AND CHILD ELEMENTS ==== */
@@ -59,42 +62,42 @@ h2 {
 /* Sub-headings  */
 h3 {
 	font-size: calc(32px + (64 - 32) * ((100vw - 320px) / (1600 - 320)));
-  color: #d1274b; 
-  letter-spacing: 2px; 
-  margin-bottom: 4px; 
+  	color: #d1274b; 
+  	letter-spacing: 2px; 
+  	margin-bottom: 4px; 
 }
 
 /* Text paragraphs */
 p { 
 	font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1600 - 320)));
-  color: #2F4F4F; 
-  letter-spacing: 1px; 
-  line-height: 1.6; 
+  	color: #2F4F4F; 
+  	letter-spacing: 1px; 
+  	line-height: 1.6; 
+
+}
+
+/* ==== Subheading, paragraph text against a dark background ==== */
+	.bg-bluebery h3 {color: #fff }
+  	.bg-blueberry p { color: #fff  }
+
+/* ===== center-align sub-headings and paragraphs on mobiles === */
+@media all and (max-width: 767px){
+	h3, p {text-align: centre}
 }
 
 /* Mobiles: Re-order columns inside first and third flexbox parent containers */ 
 @media all and (max-width: 767px) {
 	.bg-watermelon .item-col-2:nth-child(1) { order: 2; }
 	.bg-watermelon .item-col-2:nth-child(2) { order: 1; }
-	.bg-blueberry     .item-col-2:nth-child(1) { order: 2; }
-	.bg-blueberry     .item-col-2:nth-child(2) { order: 1; }
+	.bg-lemon      .item-col-2:nth-child(1) { order: 2; }
+	.bg-lemon      .item-col-2:nth-child(2) { order: 1; }
   }
 
-/* Sub-heading, paragraph text against dark background */
-.bg-blueberry h3, .bg-blueberry p { color: #ffffff;}
-
-
-/* Centre-align sub-headings and paragraphs on mobiles */
-@media all and (max-width:767px){
-	h3, p {text-align: center}
-} 
-
-/* =============== BEGIN EMAIL SIGN UP FORM CSS ============= */
 
 /* == Email signup form container == */
 
 /* All screens */
-.container-form-email-signup  { text-align: center; background-color: #fff; }
+.container-form-email-signup  { text-align: center; background-color: #fff}
 
 /* Desktop */
 @media all and (min-width:1024px) { 
@@ -116,8 +119,9 @@ p {
 
 /* Heading */
 .container-form-email-signup h3 { 
+	font-family: 'Neucha', sans-serif;
 	font-weight: bold; 
-	color: #733fc0
+	color: #733fc0;
 	line-height: 1.2;
 	margin-bottom: 3%;
 	font-size: calc(32px + (84 - 32) * ((100vw - 320px) / (1600 - 320))); 
@@ -125,8 +129,9 @@ p {
 
 /* Text */
 .container-form-email-signup p { 
-    font-weight: normal;
-    color: ##733fc0
+	font-family: 'Neucha', sans-serif;
+	font-weight: normal;
+	color: #733fc0;
     line-height: 1.5;
     margin-bottom: 7%;    
 	font-size: calc(20px + (32 - 20) * ((100vw - 320px) / (1600 - 320))); 
@@ -163,10 +168,9 @@ p {
 }
 
 #email-signup-form label { 
-	padding: 14px 0; 
-	font-family: sans-serif; 
-	font-size: 18px
-}
+	padding: 14px 0;
+	font-family: sans-serif;
+	font-size:18px}
 
 #email-signup-form label,
 #email-signup-form #btn-submit { font-weight: bold }
@@ -210,4 +214,95 @@ p {
 	#email-signup-form #btn-submit { margin: 30px auto 0 auto; width: 80% }
 }
 
-/* =============== END EMAIL SIGN UP FORM CSS ============= */
+/* == Begin footer CSS == */
+
+/* Outer footer parent container */
+.container-footer { 
+	display: flex;
+	justify-content: space-between;
+   flex-wrap: wrap;
+   background-color:#d1274b
+}
+
+/* Desktop footer - inside padding  */
+@media all and (min-width:768px) {
+	.container-footer { padding: 3% 8% 3% 8% }
+}
+
+/* Mobiles footer - inside padding */
+@media all and (max-width:767px) {
+	.container-footer { padding: 12% 8% 1% 8% }
+}
+
+/* Inner footer columns */
+
+/* Desktops - 3 columns */
+@media all and (min-width:768px) { 
+   .container-footer .item-3:nth-child(1) { width: 20% }
+   .container-footer .item-3:nth-child(2) { 
+      width: 50%;
+      /* text-align: center */
+   }
+   .container-footer .item-3:nth-child(3) { 
+      width: 20%;
+   }
+}
+
+/* Mobiles - 1 column */
+@media all and (max-width:767px) { 
+	.container-footer .item-3 { 
+      width: 100%;
+      margin-bottom: 10%
+   }
+   .container-footer .item-3:nth-child(2) { order: 1 }
+   .container-footer .item-3:nth-child(1) { order: 2 }
+   .container-footer .item-3:nth-child(3) { order: 3 } 
+}
+
+/* Styles for footer background, text, icons and links */
+
+.container-footer .item-3 h4,
+.container-footer .item-3 p,
+.container-footer .item-3 p i,
+.container-footer .item-3 p a {
+   color: #fff
+}
+
+.container-footer .item-3 h4 {
+   font-weight: bold;
+   /* text-transform: uppercase */
+   margin-bottom: 12px;
+   font-size: calc(22px + (26 - 22) * ((100vw - 320px)/(1600 - 320)));
+   letter-spacing: 1px;
+}
+
+.container-footer .item-3 p {
+   font-weight: normal;
+   margin-bottom: 12px;
+   font-size: calc(17px + (22 - 17) * ((100vw - 320px)/(1600 - 320)));
+   line-height: 1.6;
+   letter-spacing: 1px;
+}
+
+.container-footer .item-3 i { 
+   padding-right: 32px;
+} 
+
+.container-footer .item-3 p a {
+   text-decoration: none;
+   border-bottom-style: solid;
+   border-bottom-width: 2px;
+   padding-bottom:2px;
+}
+
+.container-footer .item-3 p a:link, 
+.container-footer .item-3 p a:visited  {
+   border-bottom-color: transparent;
+}
+
+.container-footer .item-3 p a:hover, 
+.container-footer .item-3 p a:active  {
+   border-bottom-color: #fff
+}
+
+/* == End footer CSS == */
