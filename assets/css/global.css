@@ -5,9 +5,9 @@ body { min-height: 100%; max-width: 1600px; margin-left: auto; margin-right: aut
 img { width: 100%; height: auto; display: block }
 
 /* Default font and colours */
-body { font-family: 'Raleway', sans-serif; background-color: #0f2456 }
-h1, h2, h3 { color: #4799eb; font-family:'Raleway', sans-serif }
-p, li { color: #fff; font-family:'Raleway', sans-serif }
+body { font-family: 'Raleway', sans-serif; background-color: #fbf5eb }
+h1, h2, h3 { color: #2a2b2a; font-family:'Raleway', sans-serif }
+p, li { color: #2a2b2a; font-family:'Raleway', sans-serif }
 
 /* Begin menu styles */
 
@@ -112,7 +112,7 @@ p, li { color: #fff; font-family:'Raleway', sans-serif }
 /* style text for links and cta button  */
 .container-menu-desktop ul li a {
     font-size: calc(15px + (19 - 15) * ((100vw - 320px)/(1600 - 320)));
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     /* font-weight:bold */
     /* text-transform: uppercase */
 }
@@ -252,7 +252,7 @@ p, li { color: #fff; font-family:'Raleway', sans-serif }
 
 /* background colour */
 .menu-light { 
-	background-color: #4799eb;
+	background-color: white;
 	transition: all .5s ease-in-out;
 }
 
@@ -262,44 +262,44 @@ p, li { color: #fff; font-family:'Raleway', sans-serif }
 }
 
 /* menu links */
-.menu-light ul li a:link,  .menu-light ul li a:visited { color:#0f2456 }
-.menu-light ul li a:hover, .menu-light ul li a:active  { color: #222 }
+.menu-light ul li a:link,  .menu-light ul li a:visited { color:r#2a2b2a }
+.menu-light ul li a:hover, .menu-light ul li a:active  { color: #ff4040}
 
 /* cta button */
 .menu-light ul li a.btn-cta:link, 
 .menu-light ul li a.btn-cta:visited {
     background-color: transparent;
-    color: #0f2456;
-    border-color:#0f2456
+    color: #383428;
+    border-color:#383428
 }
 
 .menu-light ul li a.btn-cta:hover,
 .menu-light ul li a.btn-cta:active {
-    background-color: #0f2456;
+    background-color: #2a2b2a;
     color: #fff;
-    border-color:#0f2456
+    border-color:#2a2b2a
 }
 
 /* on mobiles only */
-.menu-light.flyout-menu hr { background-color: #0f2456; border-color:#0f2456 } 
+.menu-light.flyout-menu hr { background-color: #ff4040; border-color:#ff4040 } 
 
 .menu-light.flyout-menu h4,
 .menu-light.flyout-menu h5,
 .menu-light.flyout-menu h5 a, 
-.menu-light.flyout-menu p { color:#0f2456 } 
+.menu-light.flyout-menu p { color:#ff4040} 
 
 /* colour of hamburger icon bars */
 .menu-light .item-icon .bar1, 
 .menu-light .item-icon .bar2, 
-.menu-light .item-icon .bar3 { background-color:#0f2456 }	
+.menu-light .item-icon .bar3 { background-color:#ff4040}	
 
 /* phone number link */
-a[href^=tel] { text-decoration: none; color:#0f2456 }
+a[href^=tel] { text-decoration: none; color:#ff4040 }
 
 /* email link */
 .menu-light.flyout-menu h5 a:link, 
 .menu-light.flyout-menu h5 a:visited {
-    border-bottom-color: #0f2456;
+    border-bottom-color: #ff4040;
 }
 
 .menu-light.flyout-menu h5 a:hover, 
@@ -308,10 +308,10 @@ a[href^=tel] { text-decoration: none; color:#0f2456 }
 }
 
 /* profile image border colour */
-.menu-light.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color:#0f2456 }
+.menu-light.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color:#ff4040 }
 
 /* contact icons */
-.menu-light.flyout-menu .fly-out-social-icons a i { color: #0f2456 }
+.menu-light.flyout-menu .fly-out-social-icons a i { color: #ff4040}
 
 /* === End light background menu === */
 
@@ -325,22 +325,22 @@ a[href^=tel] { text-decoration: none; color:#0f2456 }
 }
 
 /* menu links */
-.menu-transparent ul li a:link,  .menu-transparent ul li a:visited { color: #fff }
+.menu-transparent ul li a:link,  .menu-transparent ul li a:visited { color: #2a2b2a }
 .menu-transparent ul li a:hover, .menu-transparent ul li a:active  { color: #b8b8b8 }
 
 /* cta button */
 .menu-transparent ul li a.btn-cta:link,
 .menu-transparent ul li a.btn-cta:visited { 
-    background-color: #0f2456;
+    background-color: #ff4040;
     color: #fff;
-    border-color:#0f2456;
+    border-color:#ff4040;
 }
 
 .menu-transparent ul li a.btn-cta:hover,
 .menu-transparent ul li a.btn-cta:active { 
     background-color: #fff;
-    color: #0f2456;
-    border-color:#0f2456
+    color: #2a2b2a;
+    border-color:#fff
 }
 
 /* on mobiles only - various content */
@@ -367,11 +367,11 @@ a[href^=tel] { text-decoration: none; color: #fff }
 
 .menu-transparent.flyout-menu h5 a:hover, 
 .menu-transparent.flyout-menu h5 a:active {
-    border-bottom-color:#0f2456;
+    border-bottom-color:#ff4040;
 }
 
 /* profile image border colour */
-.menu-transparent.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: #0f2456 }
+.menu-transparent.flyout-menu.flyout-menu-is-open div.fly-out-profile-box img { border-color: #ff4040}
 
 /* contact icons */
 .menu-transparent.flyout-menu .fly-out-social-icons a i { color:#fff }
@@ -404,7 +404,7 @@ a[href^=tel] { text-decoration: none; color: #fff }
 
 .container-hero-block h1, .container-hero-block h2 {
 	font-weight: 700;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -415,7 +415,7 @@ a[href^=tel] { text-decoration: none; color: #fff }
 }
 
 .container-hero-block h2 {
-	color:  #4799eb;
+	color:  #000000;
 	line-height: 1.5;
 	font-size: calc(32px + (64 - 32) * ((100vw - 320px)/(1600 - 320)));
 }
@@ -492,13 +492,13 @@ a.button:link, a.button:visited, a.button:hover, a.button:active {
 }
  
 a.button-solid:link, .button-solid:visited {
-    background-image: linear-gradient(to right, #3498db, #2980b9);
+    background-image: black;
     color: #fff;
 } 
  
 a.button-solid:hover, .button-solid:active {
-    border-color: #3867d6;
-    background-image: linear-gradient(to right, #3742fa, #3742fa);
+    border-color: #ff4040;
+    background-image: #ff4040;
    color: #fff 
 }
  
@@ -521,9 +521,9 @@ a.fancy-link:hover, a.fancy-link:active {
     padding-bottom: 2px;
 }
 
-a.fancy-link:link, a.fancy-link:visited { color:#33adff; border-bottom-color:#33adff }
+a.fancy-link:link, a.fancy-link:visited { color:#000000; border-bottom-color:#000000 }
 
-a.fancy-link:hover, a.fancy-link:active { color: #fff; border-bottom-color: #fff }
+a.fancy-link:hover, a.fancy-link:active { color:red; border-bottom-color: red }
 
 
 /* ============== FLEXBOX MULTI-COLUMN LAYOUTS ================== */
@@ -664,7 +664,7 @@ img.image-circle {
 /* All screens */
 .container-contact-form { 
 	text-align: center; 
-	background-color: #4799eb; 
+	background-color: darkgray; 
 }
 
 /* Desktop */
@@ -688,7 +688,7 @@ img.image-circle {
 /* Heading */
 .container-contact-form h3 { 
 	font-weight: bold; 
-	color: #0c2461;
+	color:#ff4040;
 	line-height: 1.2;
 	margin-bottom: 3%;
 	font-size: calc(30px + (64 - 30) * ((100vw - 320px) / (1600 - 320))); 
@@ -749,7 +749,7 @@ img.image-circle {
 
 #contact-form input, #contact-form textarea {
 	padding: 10px 12px;
-	border: 2px solid #0c2461;
+	border: 2px solid #ff4040;
 	background-color: #f0f0f0;
 	border-radius: 5px;
 }
@@ -764,7 +764,7 @@ img.image-circle {
 #contact-form #btn-submit { 
 	float: right; 
 	border: none; 
-    background-color: #0c2461;
+    background-color: #ff4040;
     color: #fff;
 	font-weight: bold;
     padding: 18px 28px;
@@ -794,7 +794,7 @@ img.image-circle {
 .container-footer { 
     text-align: center;
     color:#fff;
-    background-color:rgb(36,64,84);
+    background-color:#ff4040;
 }
 
 /* Desktop footer - inside padding  */
@@ -820,7 +820,7 @@ img.image-circle {
 
 /* Footer headings */
 .container-footer h4 {
-   font-family: 'PT Serif', serif;
+   font-family: 'Raleway', sans-serif;
    font-weight: normal;
    font-size: calc(26px + (48 - 26) * ((100vw - 320px)/(1600 - 320)));
    margin: 0 auto 16px 0;
@@ -830,7 +830,7 @@ img.image-circle {
     font-family: 'Raleway';
     font-weight: normal;
     font-style:  italic;
-    color: #33adff;
+    color: black;
     margin: 0 auto 36px auto;
     font-size: calc(20px + (32 - 20) * ((100vw - 320px)/(1600 - 320)));
 }
@@ -876,7 +876,7 @@ img.image-circle {
 
 .container-footer ul.footer-links li a:hover, 
 .container-footer ul.footer-links li a:active  {
-   border-bottom-color: #33adff;
+   border-bottom-color: white;
 }
 
 /* Footer icons */
@@ -887,7 +887,7 @@ img.image-circle {
 
 .container-footer ul.footer-icons li a:hover, 
 .container-footer ul.footer-icons li a:active  {
-   color: #33adff
+   color: black
 }
 
 /* Privacy and legal link */
@@ -906,7 +906,7 @@ img.image-circle {
 
 .container-footer p a:hover, 
 .container-footer p a:active  {
-   border-bottom-color: #33adff
+   border-bottom-color: #ff4040
 }
 
 a.privacy-legal {
@@ -927,7 +927,7 @@ a.privacy-legal:visited {
 
 a.privacy-legal:active,
 a.privacy-legal:hover {
-    border-bottom-color: #33adff
+    border-bottom-color: #ff4040
 }
 
 /* == End footer CSS == */
