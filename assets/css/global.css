@@ -6,8 +6,11 @@ img { width: 100%; height: auto; display: block }
 
 /* Default font and colours */
 body { font-family: 'Raleway', sans-serif; background-color: #fbf5eb }
-h1, h2, h3 { color: #2a2b2a; font-family:'Raleway', sans-serif }
-p, li { color: #2a2b2a; font-family:'Raleway', sans-serif }
+h1 { color: #ff4040; font-family:'Raleway', sans-serif }
+h2 { color: #ff4040; font-family:'Raleway', sans-serif }
+h3 { color: #2a2b2a; font-family:'Raleway', sans-serif }
+p { color: #2a2b2a; font-family:'Raleway', sans-serif }
+li { color: #2a2b2a; font-family:'Raleway', sans-serif }
 
 /* Begin menu styles */
 
@@ -262,22 +265,22 @@ p, li { color: #2a2b2a; font-family:'Raleway', sans-serif }
 }
 
 /* menu links */
-.menu-light ul li a:link,  .menu-light ul li a:visited { color:r#2a2b2a }
+.menu-light ul li a:link,  .menu-light ul li a:visited { color: #2a2b2a}
 .menu-light ul li a:hover, .menu-light ul li a:active  { color: #ff4040}
 
 /* cta button */
 .menu-light ul li a.btn-cta:link, 
 .menu-light ul li a.btn-cta:visited {
     background-color: transparent;
-    color: #383428;
-    border-color:#383428
+    color: #2a2b2a;
+    border-color:#2a2b2a
 }
 
 .menu-light ul li a.btn-cta:hover,
 .menu-light ul li a.btn-cta:active {
-    background-color: #2a2b2a;
+    background-color: #ff4040;
     color: #fff;
-    border-color:#2a2b2a
+    border-color:#ff4040
 }
 
 /* on mobiles only */
@@ -325,8 +328,8 @@ a[href^=tel] { text-decoration: none; color:#ff4040 }
 }
 
 /* menu links */
-.menu-transparent ul li a:link,  .menu-transparent ul li a:visited { color: #2a2b2a }
-.menu-transparent ul li a:hover, .menu-transparent ul li a:active  { color: #b8b8b8 }
+.menu-transparent ul li a:link,  .menu-transparent ul li a:visited { color: #ff4040 }
+.menu-transparent ul li a:hover, .menu-transparent ul li a:active  { color: #888 }
 
 /* cta button */
 .menu-transparent ul li a.btn-cta:link,
@@ -339,7 +342,7 @@ a[href^=tel] { text-decoration: none; color:#ff4040 }
 .menu-transparent ul li a.btn-cta:hover,
 .menu-transparent ul li a.btn-cta:active { 
     background-color: #fff;
-    color: #2a2b2a;
+    color: #ff4040;
     border-color:#fff
 }
 
@@ -381,7 +384,7 @@ a[href^=tel] { text-decoration: none; color: #fff }
 /* === HERO BLOCK === */
 
 .container-hero-block {
-	display: flex;
+    display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
@@ -391,33 +394,33 @@ a[href^=tel] { text-decoration: none; color: #fff }
 }
 
 .container-hero-block.home-page {
-	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)), url('../img/hero-home-background.jpg');
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)), url('../img/hero-home-background-2.jpeg');
 }
 
 .container-hero-block.portfolio-page {
-	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)), url('../img/hero-portfolio-background.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)), url('../img/hero-portfolio-background-2.jpg');
 }
 
 .container-hero-block.contact-page {
-	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)), url('../img/hero-contact-background.jpg')
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)), url('../img/hero-contact-background-2.jpg')
 }
 
 .container-hero-block h1, .container-hero-block h2 {
-	font-weight: 700;
+    font-weight: 700;
 	font-family: 'Raleway', sans-serif;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .container-hero-block h1 { 
-	color: #000000;
+	color: #fff;
 	font-size: calc(42px + (102 - 42) * ((100vw - 320px)/(1600 - 320)))
 }
 
 .container-hero-block h2 {
-	color:  #000000;
+	color:  #2a2b2a;
 	line-height: 1.5;
-	font-size: calc(32px + (64 - 32) * ((100vw - 320px)/(1600 - 320)));
+	font-size: calc(22px + (28 - 22) * ((100vw - 320px)/(1600 - 320)));
 }
 
 /* Desktop - block height, text width and h1 bottom margin */
@@ -492,7 +495,7 @@ a.button:link, a.button:visited, a.button:hover, a.button:active {
 }
  
 a.button-solid:link, .button-solid:visited {
-    background-image: black;
+    background-image: #2a2b2a;
     color: #fff;
 } 
  
@@ -521,9 +524,9 @@ a.fancy-link:hover, a.fancy-link:active {
     padding-bottom: 2px;
 }
 
-a.fancy-link:link, a.fancy-link:visited { color:#000000; border-bottom-color:#000000 }
+a.fancy-link:link, a.fancy-link:visited { columns: #2a2b2a;; border-bottom-color:#2a2b2a }
 
-a.fancy-link:hover, a.fancy-link:active { color:red; border-bottom-color: red }
+a.fancy-link:hover, a.fancy-link:active { color:#ff4040; border-bottom-color:#ff4040}
 
 
 /* ============== FLEXBOX MULTI-COLUMN LAYOUTS ================== */
@@ -697,7 +700,7 @@ img.image-circle {
 /* Text */
 .container-contact-form p { 
     font-weight: normal;
-    color: #000; 
+    color: #2a2b2a; 
 	line-height: 1.5;
 	margin-bottom: 7%;
 	font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1600 - 320))); 
@@ -723,7 +726,7 @@ img.image-circle {
 
 #contact-form label, #contact-form input, #contact-form textarea {
 	font-family: sans-serif;
-	color: #000;
+	color: #2a2b2a;
 	display: block;
 }
 
@@ -774,7 +777,7 @@ img.image-circle {
 
 #contact-form #btn-submit:hover, 
 #contact-form #btn-submit:active { 
-    background-color: #403d50;
+    background-color: #2a2b2a;
     color: #fff
 }
 
@@ -830,7 +833,7 @@ img.image-circle {
     font-family: 'Raleway';
     font-weight: normal;
     font-style:  italic;
-    color: black;
+    color: #2a2b2a;
     margin: 0 auto 36px auto;
     font-size: calc(20px + (32 - 20) * ((100vw - 320px)/(1600 - 320)));
 }
@@ -887,7 +890,7 @@ img.image-circle {
 
 .container-footer ul.footer-icons li a:hover, 
 .container-footer ul.footer-icons li a:active  {
-   color: black
+   color: #2a2b2a
 }
 
 /* Privacy and legal link */

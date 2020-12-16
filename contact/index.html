@@ -75,12 +75,12 @@
         <hr>
         <h4>About Me</h4>
         <div class="fly-out-profile-box">
-            <img src="../assets/img/profile-pic.jpg" alt="Mary Smith, web designer, Dublin">
+            <img src="../assets/img/profile-pic.jpg" alt="Kerstie, web designer, Dublin">
             <p>Hi, I'm <b>Kerstie</b>, a web and digital designer based in Dublin, Ireland.</p>
         </div>
    
         <h4>Contact</h4>
-        <p>Have a project you'd like to discuss? Let's make something great together!</p>
+        <p>Have a project you'd like to discuss? Take the next step!</p>
 
         <h5><a href="tel:0879718085">087 9718085</a></h5>
 
@@ -102,18 +102,25 @@
 	<!-- Begin hero block -->
 	<div class="container-hero-block contact-page">
 		<div class="slide-in-top">
-			<h1>Kerstie Design</h1>
-			<h2>Let's work together</h2>
 		</div>
 	</div>
 	<!-- End hero block -->
-	
+    
+    <!-- Begin parent flexbox container for one column layout (.item-1) on all screens -->
+	<div class="container-flexbox bg-pastel-green">
+		<div class="item-1">
+            <h2>Get in Contact</h2>
+            <p>Have a project you'd like to discuss? Take the next step!</p>
+            
+            <p> Use the form below to let me know a little more about your project and I'll get back to you.</p>
+    
+		</div>
+    </div><!-- End parent flexbox container -->
 
     <!-- Begin container for contact form -->
         
     <div class="container-contact-form">
-        <h3>Get in touch</h3>
-        <p>Use the form below to let me know a little more about your objectives and I'll get back to you.</p>
+  
         
         <!-- Contact form starts here -->
         <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/myname@gmail.com">
@@ -272,18 +279,20 @@
 
 
     <!-- JavaScript for Cookie Consent Popup Message -->
-	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
     <script>
     window.cookieconsent.initialise({
       "palette": {
         "popup": {
-          "background": "#aa0000",
-          "text": "#ffdddd"
+          "background": "#ffffff",
+          "text": "#000000"
         },
         "button": {
-          "background": "#000000"
+          "background": "#ff4040",
+          "text": "#ffffff"
         }
       },
+      "theme": "classic",
       "content": {
         "href": "https://kerstie.github.io/privacy.html"
       }
