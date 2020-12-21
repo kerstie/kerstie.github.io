@@ -486,7 +486,6 @@ a[href^=tel] { text-decoration: none; color: #fff }
 a.button:link, a.button:visited, a.button:hover, a.button:active { 
     text-decoration: none;
     color: #fff;
-    border: none;
     padding: 14px 30px;
     display: inline-block;
     line-height: 1;
@@ -495,14 +494,15 @@ a.button:link, a.button:visited, a.button:hover, a.button:active {
 }
  
 a.button-solid:link, .button-solid:visited {
-    background-image: #2a2b2a;
+    background-color: #ff4040;
+    border-color: #ff4040;
     color: #fff;
 } 
  
 a.button-solid:hover, .button-solid:active {
-    border-color: #ff4040;
-    background-image: #ff4040;
-   color: #fff 
+    border-color: #2a2b2a;
+    background-color: #fff;
+   color: #2a2b2a;
 }
  
 a.button-round { border-radius: 50px }
@@ -590,8 +590,10 @@ a.fancy-link:hover, a.fancy-link:active { color:#ff4040; border-bottom-color:#ff
 /* Desktops - 3 columns */
 @media all and (min-width:768px) { 
 	.container-flexbox .item-3 { width: 30% }
-	.container-flexbox .item-3 { margin-bottom: 6% }
+    .container-flexbox .item-3 { margin-bottom: 6% }
+  
 }
+
 
 /* Mobiles - 1 column */
 @media all and (max-width:767px) { 
