@@ -19,12 +19,12 @@ body { font-family: 'Roboto', sans-serif }
 
 /* Desktops only - inside padding  */
 @media (min-width:768px) {
-	.container-flexbox { padding: 4% 10%}
+	.container-flexbox { padding: 4% 10% }
 }
 
 /* Mobiles only - inside padding */
 @media (max-width:767px) {
-	.container-flexbox { padding: 8%}
+	.container-flexbox { padding: 8% }
 }
 
 /* Background colors */
@@ -48,7 +48,7 @@ body { font-family: 'Roboto', sans-serif }
 @media (min-width:768px) { 
 	.container-flexbox .item-col-2 { 
 		width: 45%;
-		padding:3%, 0, 0, 0;
+		padding: 8% 0 0 0;
 	}
 }
 
@@ -59,11 +59,21 @@ body { font-family: 'Roboto', sans-serif }
 		width: 100%;
 		padding: 10%;
 	}
+	.container-flexbox .item-col-2:nth-child(1) { order: 2 }
+	.container-flexbox .item-col-2:nth-child(2) { order: 1 }
 }
-.container-flexbox .item-col-2:nth-child(1) {order:2}
-.container-flexbox .item-col-2:nth-child(2) {order:1}
 
 /* === FLEXBOX ITEM COLUMNS: 3 COLUMNS ON DESKTOPS, 1 COLUMN ON MOBILES === */
+.container-flexbox .item-col-3 { 
+	background-color: #fff;
+	box-shadow: rgba(160, 160, 160, 0.8) 5px 5px 20px;
+	border-radius: 12px;
+}
+
+.container-flexbox .item-col-3 img { 
+	margin-bottom: 12px;
+	border-radius: 12px;
+}
 
 /* Desktops - 3 columns */
 @media (min-width:768px) { 
@@ -78,35 +88,24 @@ body { font-family: 'Roboto', sans-serif }
 @media (max-width:767px) { 
 	.container-flexbox .item-col-3 { 
 		width: 100%;
-		padding: 10%;
 		text-align: center;
+		padding: 10%;
 		margin-bottom: 14%;
 	}
 }
 
-.container-flexbox .item-col-3 { 
-	background-color: #fff;
-	box-shadow: rgba (160 160 160 0.8) 5px 5px 20px;
-	border-radius: 12px;
-}
-
-.container-flexbox .item-col-3 img {
-margin-bottom: 12px;
-border-radius: 5px;
-}
-
-.container-flexbox.happy-users .item-col-3 { 
+.container-flexbox.happy-users .item-col-3 {
 	text-align: center;
-	padding-bottom: 2%;
-	
+	padding-bottom:2%;
 }
 
 .container-flexbox.happy-users .item-col-3 img {
-width: 80%;
-margin-left: auto;
-margin-right: auto;
-border-radius: 100%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 100%;
 }
+
 /* ================== HEADINGS, PARAGRAPHS, IMAGES ================= */
 
 /* Single column item-col-1 */
@@ -209,15 +208,17 @@ border-radius: 100%;
 	}
 }
   
+.no-padding-bottom { padding-bottom: 0 !important }
 
-.no-padding-bottom {padding:0 !important}
-
-
+/* =============== BEGIN EMAIL SIGN UP FORM CSS ============= */
 
 /* == Email signup form container == */
 
 /* All screens */
-.container-form-email-signup  { text-align: center; background-color: #5ba745;}
+.container-form-email-signup  { 
+	text-align: center; 
+	background-color: #5ba745; 
+}
 
 /* Desktop */
 @media all and (min-width:1024px) { 
@@ -285,30 +286,16 @@ border-radius: 100%;
     border-radius: 5px;
 }
 
-#email-signup-form label { padding: 14px 0; color: #fff; font-size: 18px; }
+#email-signup-form label { padding: 14px 0; color: #fff; font-size: 18px }
 
 #email-signup-form label,
 #email-signup-form #btn-submit { font-weight: bold }
 
 #email-signup-form input,
-#email-signup-form #btn-submit {
-	color: #fff;
-	border: solid 2px #fff;
-	padding: 12px 22px;
-	background-color: #fff;
-	letter-spacing: 1px;
-	border-radius: 50px;
-	color: #5ba745;
- }
- #email-signup-form #btn-submit:focus,
- #email-signup-form #btn-submit:hover {
-	color: #fff;
-	background-color: #5ba745;
-	border: solid 2px #fff
- }
+#email-signup-form #btn-submit { padding: 12px 20px }
 
 #email-signup-form ::placeholder { font-size: 96% }
-
+s
 #email-signup-form input {
 	background-color: #f0f0f0;
 	padding: 10px 12px;
@@ -320,17 +307,22 @@ border-radius: 100%;
 }
 
 #email-signup-form #btn-submit {
-	color:#fff;
-    border: none; 
-	padding: 12px 22px;    
-	background-color: blue;
-    /* text-transform: uppercase; */
-    /* letter-spacing: 2px */
-}
-
-#email-signup-form #btn-submit:hover {
-	background-color: darkblue;
-}
+	color: #fff;
+	border: solid 2px #fff;
+	padding: 12px 22px;
+	background-color: #fff;
+	letter-spacing: 1px;
+	border-radius: 50px;
+	color: #5ba745;
+	}
+	
+	#email-signup-form #btn-submit:focus,
+	#email-signup-form #btn-submit:hover {
+	color: #fff;
+	background-color: #5ba745;
+	border: solid 2px #fff
+	 }
+ 
 
 #email-signup-form #btn-submit i {
 	margin-left: 8px
@@ -342,6 +334,9 @@ border-radius: 100%;
 	#email-signup-form input { margin: 0 0 24px 0 }
 	#email-signup-form #btn-submit { margin: 30px auto 0 auto; width: 80% }
 }
+
+/* =============== END EMAIL SIGN UP FORM CSS ============= */
+
 /* == CTA button == */
 .container-flexbox a.btn-cta {
 	display: inline-block;
@@ -355,110 +350,18 @@ border-radius: 100%;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
- }
+}
  
- .container-flexbox a.btn-cta:link,
- .container-flexbox a.btn-cta:visited {
+.container-flexbox a.btn-cta:link,
+.container-flexbox a.btn-cta:visited {
 	color: #5ba745;
 	background-color: #fff;
 	border-color: #5ba745
- }
+}
  
- .container-flexbox a.btn-cta:hover,
- .container-flexbox a.btn-cta:active {
+.container-flexbox a.btn-cta:hover,
+.container-flexbox a.btn-cta:active {
 	color: #fff;
 	background-color: #5ba745;
 	border-color: #5ba745
- }
- /* == Begin footer CSS == */
-
-/* Outer footer parent container */
-.container-footer { 
-	display: flex;
-	justify-content: space-between;
-   flex-wrap: wrap;
-   background-color:#5ba745
 }
-
-/* Desktop footer - inside padding  */
-@media all and (min-width:768px) {
-	.container-footer { padding: 3% 8% 3% 8% }
-}
-
-/* Mobiles footer - inside padding */
-@media all and (max-width:767px) {
-	.container-footer { padding: 12% 8% 1% 8% }
-}
-
-/* Inner footer columns */
-
-/* Desktops - 3 columns */
-@media all and (min-width:768px) { 
-   .container-footer .item-3:nth-child(1) { width: 20% }
-   .container-footer .item-3:nth-child(2) { 
-      width: 50%;
-      /* text-align: center */
-   }
-   .container-footer .item-3:nth-child(3) { 
-      width: 20%;
-   }
-}
-
-/* Mobiles - 1 column */
-@media all and (max-width:767px) { 
-	.container-footer .item-3 { 
-      width: 100%;
-      margin-bottom: 10%
-   }
-   .container-footer .item-3:nth-child(2) { order: 1 }
-   .container-footer .item-3:nth-child(1) { order: 2 }
-   .container-footer .item-3:nth-child(3) { order: 3 } 
-}
-
-/* Styles for footer background, text, icons and links */
-
-.container-footer .item-3 h4,
-.container-footer .item-3 p,
-.container-footer .item-3 p i,
-.container-footer .item-3 p a {
-   color: #fff
-}
-
-.container-footer .item-3 h4 {
-   font-weight: bold;
-   /* text-transform: uppercase */
-   margin-bottom: 12px;
-   font-size: calc(17px + (19 - 17) * ((100vw - 320px)/(1600 - 320)));
-   letter-spacing: 1px;
-}
-
-.container-footer .item-3 p {
-   font-weight: normal;
-   margin-bottom: 12px;
-   font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
-   line-height: 1.6;
-   letter-spacing: 1px;
-}
-
-.container-footer .item-3 i { 
-   padding-right: 26px;
-} 
-
-.container-footer .item-3 p a {
-   text-decoration: none;
-   border-bottom-style: solid;
-   border-bottom-width: 2px;
-   padding-bottom:2px;
-}
-
-.container-footer .item-3 p a:link, 
-.container-footer .item-3 p a:visited  {
-   border-bottom-color: transparent;
-}
-
-.container-footer .item-3 p a:hover, 
-.container-footer .item-3 p a:active  {
-   border-bottom-color: #fff
-}
-
-/* == End footer CSS == */
